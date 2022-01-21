@@ -8,9 +8,9 @@ ${user}                Test.Store.user01
 ${userpw}              StoreUser01
 
 #Search
-${CC_SearchBar}        //*[@id="cc_quick_search"]
-${CC_SearchBarButton}  //*[@id="hd_searchform"]/div/div[2]/button
-${CC_ProductList}      //*[@id="product-list"]
+${CCWEB_SearchBar}        //*[@id="cc_quick_search"]
+${CCWEB_SearchBarButton}  //*[@id="hd_searchform"]/div/div[2]/button
+${CCWEB_ProductList}      //*[@id="product-list"]
 
 #Login
 ${ERP_Username}        //*[@id="txtUsername"]

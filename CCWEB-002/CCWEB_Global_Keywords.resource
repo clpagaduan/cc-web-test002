@@ -5,9 +5,10 @@ Resource      CCWEB_Global_Variables.resource
 *** Keywords ***
 Open CC Website
     Open Browser                     ${url}             ${browser}
-    Wait Until Element Is Visible    ${CC_SearchBar}    5
+    Wait Until Element Is Visible    ${CCWEB_SearchBar}    5
     
-Search For Item
+Search For Item In Search Bar
     [Arguments]    ${item}
-    Input Text     ${CC_SearchBar}    ${item}
-    Click Button    ${CC_SearchBarButton}
+    Input Text     ${CCWEB_SearchBar}    ${item}
+    Click Button    ${CCWEB_SearchBarButton}
+    
