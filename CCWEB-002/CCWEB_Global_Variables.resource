@@ -11,27 +11,17 @@ ${userpw}              StoreUser01
 ${CCWEB_SearchBar}        //*[@id="cc_quick_search"]
 ${CCWEB_SearchBarButton}  //*[@id="hd_searchform"]/div/div[2]/button
 ${CCWEB_ProductList}      //*[@id="product-list"]
+${CCWEB_ViewCart}         //*[@id="btn-cart"]
+${topSearchResult}                  //*[@id="product-list"]/div[2]/div/div/div[1]/div/div[1]
 
-#Login
-${ERP_Username}        //*[@id="txtUsername"]
-${ERP_Password}        //*[@id="txtPassword"]
-${ERP_LoginBtn}        //*[@id="btnLogin"]
-${ERP_LeftMenu}        //*[@id="leftMenu"]
+${CCWEB_LoginLink}        //*[@id="header-search"]/div/div[3]/div/div[1]/a
+${CCWEB_LoginEmail}       //*[@id="lo-username"]
+${CCWEB_LoginPassword}    //*[@id="lo-password"]
+${CCWEB_LoginBtn}         //*[@id="btn-login"]
+${CCWEB_LoginProfile}     //*[@id="profile"]/div[1]/div[1]/div/div[2]/div[2]
+${CCWEB_LoginViaUsername}    //*[@id="check-out"]/div[2]/div[1]/div[2]/button
+${CCWEB_LoginErrorMessage}    No match for User Name or Password
 
-#Top Menu
-${ERP_Employee}        //*[@id="leftMenu"]/li[1]
-${ERP_ProductManage}   //*[@id="leftMenu"]/li[2]
-
-
-#functions
-${ERP_SystFunc}         //*[@id="menu100500"]
-${ERP_MsgCenter}        //*[@id="menu100700"]
-${ERP_ItemPrice}        //*[@id="menu200500"]
-${ERP_PriceTagStatus}   //*[@id="menu202400"]
-
-#Verify
-${nav_hint}             //*[@id="nav_hint"]
-${SystFunc}             /Employee/SystemFunction
-${MessageCenter}        /Message/Center
-${ItemPrice}            /Item/ItemPrice
-${PriceTagStatus}       /ItemPlace/Index
+#Nav
+${Nav_ShopProducts}    //*[@id="header-shop"]/div/div/div[3]/div[1]/div[1]/a
+# //*[@id="header-shop"]/div/div/div[3]/div[3]/a

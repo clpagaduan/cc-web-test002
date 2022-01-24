@@ -12,3 +12,17 @@ Search For Item In Search Bar
     Input Text     ${CCWEB_SearchBar}    ${item}
     Click Button    ${CCWEB_SearchBarButton}
     
+Navigate Category and Subcategory
+    [Arguments]    ${Category}    ${Subcategory}
+    Click Element    ${Nav_ShopProducts}
+    Click Category    ${Category}
+    Click Subcategory    ${Subcategory}
+    
+
+Click Category
+    [Arguments]    ${Selected_Category}
+    Mouse Over    //a[contains(text(),'${Selected_Category}')]
+    
+Click Subcategory
+    [Arguments]    ${Selected_Subcategory}
+    Click Element    //a[contains(text(),'${Selected_Subcategory}')]

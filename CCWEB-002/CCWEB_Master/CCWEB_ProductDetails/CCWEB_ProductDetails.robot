@@ -26,8 +26,8 @@ Verify If User Can Add Item To Cart in Product Details
     [Tags]    Smoke
     Search And View Product Details                    ${item1}
     Click Button                                       ${ProductDetails_AddToCart}
-    Wait Until Element Is Visible                      ${ViewCart}
-    Click Button                                       ${ViewCart}
+    Wait Until Element Is Visible                      ${CCWEB_ViewCart}
+    Click Button                                       ${CCWEB_ViewCart}
     Wait Until Page Contains                           ${item1}
     
 Verify If User Can Add Quantity in Product Details
