@@ -3,8 +3,9 @@ Library       SeleniumLibrary
 Resource      CCWEB_Global_Variables.resource
 
 *** Keywords ***
-Open CC Website
+Open CC Website   
     Open Browser                     ${url}             ${browser}
+    Maximize Browser Window
     Wait Until Element Is Visible    ${CCWEB_SearchBar}    5
     
 Search For Item In Search Bar
