@@ -20,7 +20,8 @@ Verify If The User Can Login Using Correct Email
     Input Text                       ${CCWEB_LoginEmail}    ${login_email}
     Input Password                   ${CCWEB_LoginPassword}    ${login_pw}
     Wait Until Element Is Visible       ${CCWEB_LoginBtn}    5
-    Click Element                    ${CCWEB_LoginBtn}
+    Press Keys    ${CCWEB_LoginPassword}    ENTER
+    # Click Element                    ${CCWEB_LoginBtn}
     Wait Until Page Contains         ${login_username}
     
 # Verify If The User Can Login Using Correct Username
@@ -38,6 +39,7 @@ Verify If The User Cannot Login Using Incorrect Password
     Input Text                       ${CCWEB_LoginEmail}    ${login_email}
     Input Password                   ${CCWEB_LoginPassword}    ${login_pw_inc}
     Wait Until Element Is Visible        ${CCWEB_LoginBtn}    5
-    Click Element                    ${CCWEB_LoginBtn}
+    Press Keys    ${CCWEB_LoginPassword}    ENTER
+    # Click Element                    ${CCWEB_LoginBtn}
     Wait Until Page Contains         ${CCWEB_LoginErrorMessage}
     
