@@ -6,6 +6,7 @@ Resource      CCWEB_Global_Variables.resource
 Open CC Website   
     Open Browser                     ${url}             ${browser}
     Set Window Size    1920    1080
+    Accept Cookies
     # Maximize Browser Window
     Wait Until Element Is Visible    ${CCWEB_SearchBar}    5
     
@@ -29,3 +30,6 @@ Click Category
 Click Subcategory
     [Arguments]    ${Selected_Subcategory}
     Click Element    //a[contains(text(),'${Selected_Subcategory}')]
+    
+Accept Cookies
+    Click Element    ${CCWEB_AcceptCookies}

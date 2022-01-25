@@ -25,6 +25,8 @@ ${CCWEB_LoginProfile}     //*[@id="profile"]/div[1]/div[1]/div/div[2]/div[2]
 ${CCWEB_LoginViaUsername}    //*[@id="check-out"]/div[2]/div[1]/div[2]/button
 ${CCWEB_LoginErrorMessage}    No match for User Name or Password
 
+${CCWEB_AcceptCookies}    //*[@id="privacy-btn"]
+
 #Nav
 ${Nav_ShopProducts}    //*[@id="header-shop"]/div/div/div[3]/div[1]/div[1]/a
 # //*[@id="header-shop"]/div/div/div[3]/div[3]/a
