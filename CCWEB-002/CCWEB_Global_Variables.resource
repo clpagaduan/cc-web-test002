@@ -1,7 +1,7 @@
 *** Variables ***
 #setup
 ${url}                 https://www.canadacomputers.com/
-${browser}             Chrome
+${browser}             headlesschrome
 
 #credentials
 ${user}                Test.Store.user01
