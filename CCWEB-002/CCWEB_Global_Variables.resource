@@ -18,6 +18,7 @@ ${CCWEB_LoginLink}        //*[@id="header-search"]/div/div[3]/div/div[1]/a
 ${CCWEB_LoginEmail}       //*[@id="lo-username"]
 ${CCWEB_LoginPassword}    //*[@id="lo-password"]
 ${CCWEB_LoginBtn}         //*[@id="btn-login"]
+${CCWEB_LoginUserBtn}     //*[@id="userLogin"]/div/div[7]/a
 ${CCWEB_LoginProfile}     //*[@id="profile"]/div[1]/div[1]/div/div[2]/div[2]
 ${CCWEB_LoginViaUsername}    //*[@id="check-out"]/div[2]/div[1]/div[2]/button
 ${CCWEB_LoginErrorMessage}    No match for User Name or Password
