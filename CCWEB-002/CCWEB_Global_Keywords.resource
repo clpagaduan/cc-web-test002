@@ -10,6 +10,7 @@ Open CC Website
     
 Search For Item In Search Bar
     [Arguments]    ${item}
+    Wait Until Element Is Visible    ${CCWEB_SearchBar}
     Input Text     ${CCWEB_SearchBar}    ${item}
     Click Button    ${CCWEB_SearchBarButton}
     

@@ -37,4 +37,9 @@ Verify if Landing Page Contains Subscriptions
     
 Verify if Landing Page Contains Footer
     [Tags]    Regression
-    Wait Until Element Is Visible    ${CCWEB_Footer}    5
+    Wait Until Element Is Visible    ${CCWEB_Footer_Resources}    5
+    Wait Until Element Is Visible    ${CCWEB_Footer_Account}    5
+    Wait Until Element Is Visible    ${CCWEB_Footer_CustServ}    5
+    Wait Until Element Is Visible    ${CCWEB_Footer_Resources}    5
+    Wait Until Element Is Visible    ${CCWEB_Footer_About}    5
+    Wait Until Element Is Visible    ${CCWEB_Footer_Policies}    5
