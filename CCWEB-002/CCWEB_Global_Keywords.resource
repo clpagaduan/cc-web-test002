@@ -5,7 +5,8 @@ Resource      CCWEB_Global_Variables.resource
 *** Keywords ***
 Open CC Website   
     Open Browser                     ${url}             ${browser}
-    Maximize Browser Window
+    Set Window Size    1920    1080
+    # Maximize Browser Window
     Wait Until Element Is Visible    ${CCWEB_SearchBar}    5
     
 Search For Item In Search Bar
