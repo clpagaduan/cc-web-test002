@@ -12,7 +12,8 @@ ${CCWEB_SearchBar}        //*[@id="cc_quick_search"]
 ${CCWEB_SearchBarButton}  //*[@id="hd_searchform"]/div/div[2]/button
 ${CCWEB_ProductList}      //*[@id="product-list"]
 ${CCWEB_ViewCart}         //*[@id="btn-cart"]
-${topSearchResult}                  //*[@id="product-list"]/div[2]/div/div/div[1]/div/div[1]
+# ${topSearchResult}                  //*[@id="product-list"]/div[2]/div/div/div[1]/div/div[1]
+${topSearchResult}                  //*[@id="product-list"]/div[2]/div/div/div[1]/div/div[1]/a
 
 ${CCWEB_LoginLink}        //*[@id="header-search"]/div/div[3]/div/div[1]/a
 ${CCWEB_LoginEmail}       //*[@id="lo-username"]
