@@ -17,7 +17,7 @@ Test Teardown     Close Browser
 
 Verify If The User Can Login Using Correct Email
     Click Element                    ${CCWEB_LoginLink}
-    Wait Until Page Contains         ${CCWEB_LoginBtn}
+    Wait Until Page Contains Element         ${CCWEB_LoginBtn}    5
     Input Text                       ${CCWEB_LoginEmail}    ${login_email}
     Input Password                   ${CCWEB_LoginPassword}    ${login_pw}
     Click Element                    ${CCWEB_LoginBtn}
@@ -35,7 +35,7 @@ Verify If The User Can Login Using Correct Email
 
 Verify If The User Cannot Login Using Incorrect Password
     Click Element                    ${CCWEB_LoginLink}
-    Wait Until Page Contains         ${CCWEB_LoginBtn}
+    Wait Until Page Contains Element        ${CCWEB_LoginBtn}    5
     Input Text                       ${CCWEB_LoginEmail}    ${login_email}
     Input Password                   ${CCWEB_LoginPassword}    ${login_pw_inc}
     Click Element                    ${CCWEB_LoginBtn}
