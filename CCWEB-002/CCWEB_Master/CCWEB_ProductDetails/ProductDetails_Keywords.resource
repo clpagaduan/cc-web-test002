@@ -9,6 +9,6 @@ Search and View Product Details
     [Arguments]    ${item}
     Search For Item In Search Bar   ${item}
     Wait Until Element Contains     ${CCWEB_ProductList}    ${item}
-    Wait Until Element Is Visible   ${topSearchResult}
+    Scroll Element Into View   ${topSearchResult}
     Click Element                   ${topSearchResult}
     Wait Until Page Contains        ${item}
