@@ -5,9 +5,9 @@ Resource      CCWEB_Global_Variables.resource
 *** Keywords ***
 Open CC Website   
     Open Browser                     ${url}             ${browser}
-    # Set Window Size    1920    1080
+    Set Window Size    1920    1080
     Accept Cookies
-    # Maximize Browser Window
+    Maximize Browser Window
     Wait Until Element Is Visible    ${CCWEB_SearchBar}    5
     
 Login To CC Website
@@ -46,6 +46,7 @@ Search For Item In Search Bar
     
 Navigate Category and Subcategory
     [Arguments]    ${Category}    ${Subcategory}
+    Wait Until Element Is Visible    ${Nav_ShopProducts}
     Click Element    ${Nav_ShopProducts}
     Click Category    ${Category}
     Click Subcategory    ${Subcategory}

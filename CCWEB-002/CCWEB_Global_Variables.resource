@@ -4,7 +4,7 @@
 
 #setup
 ${url}                 https://www.canadacomputers.com/
-${browser}             headlesschrome
+${browser}             chrome
 
 #credentials
 ${user}                Test.Store.user01
