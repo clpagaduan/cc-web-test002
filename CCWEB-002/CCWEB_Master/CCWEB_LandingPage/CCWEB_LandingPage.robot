@@ -12,7 +12,7 @@ Test Teardown     Close Browser
 *** Test Cases ***
 
 Verify If Landing Page Is Accessible
-    [Tags]    Smoke    Regression
+    [Tags]    Smoke
     Wait Until Element Is Visible    ${CCWEB_SearchBar}    5
     
 Verify If Landing Page Contains Site Header

@@ -20,22 +20,22 @@ Test Teardown     Close Browser
 #Filter - Price Range
 
 Verify If User Can Access Product List
-    [Tags]    Skip
+    [Tags]    Smoke
     Search For Item In Search Bar    ${item1}
     Page Should Contain Element        ${ProductList_Table}
     
 Verify If User Can Search For Items in Product List
-    [Tags]    Skip
+    [Tags]    Smoke
     Search For Item In Search Bar    ${item1}
     Wait Until Element Contains      ${ProductList_Table}    ${item1}
     
 Verify If User Can Navigate Categories And Access Product List
-    [Tags]    Skip
+    [Tags]    Smoke
     Navigate Category And Subcategory    ${Selected_Category}    ${Selected_Subcategory}
     Page Should Contain Element    ${topSearchResult}
     
 Verify If User Can Hide Filters In Product List
-    [Tags]    Smoke
+    [Tags]    Regression
     Navigate Category And Subcategory    ${Selected_Category}    ${Selected_Subcategory}
     Click Element    ${ProductList_FilterToggle}
     Element Should Not Be Visible    ${ProductList_FilterSideBar}
