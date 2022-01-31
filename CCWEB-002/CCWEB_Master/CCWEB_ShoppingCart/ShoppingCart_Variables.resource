@@ -4,4 +4,4 @@ ${ShoppingCart_SubtractQty}   //*[@id="shopping_cart"]/div[2]/div/div[2]/div/div
 ${ShoppingCart_Quantity}      //*[@id="shopping_cart"]/div[2]/div/div[2]/div/div[2]/p/input
 ${ShoppingCart_Delete}        //*[@id="shopping_cart"]/div[2]/div/div[2]/div/div[2]/p/i
 
-${item1}    CAICA00696
+# ${item1}    CAICA00696

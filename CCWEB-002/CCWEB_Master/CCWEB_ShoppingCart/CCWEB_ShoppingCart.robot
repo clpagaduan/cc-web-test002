@@ -26,21 +26,17 @@ Verify If User Can Add Item and View Shopping Cart As Logged In User
     Login To CC Website                                ${login_email}    ${login_pw}    ${login_username}
     # Verify If User Is Logged In                           ${login_username}
     Search For Item In Search Bar                      ${item1}
-    Wait Until Element Is Visible                      ${ProductList_AddToCart_FirstResult}
-    Click Button                                       ${ProductList_AddToCart_FirstResult}
-    Wait Until Element Is Visible                      ${CCWEB_ContinueShopping}
-    Click Button                                       ${CCWEB_ContinueShopping}
-    Wait Until Element Is Visible                      ${Nav_cart}
-    Click Element                                      ${Nav_cart}
-    Wait Until Page Contains                           ${item1}
+    Click First Item In Search Results
+    Click Continue Shopping
+    Click View Cart
+    Verify If Item Exists In Cart                      ${item1}
     
 Verify If User Can Add Quantity in Shopping Cart
     [Tags]    Regression
     # Login To CC Website                                ${login_email}    ${login_pw}    ${login_username}
     # Wait Until Page Contains                           ${login_username}
-    Wait Until Element Is Visible                      ${Nav_cart}
-    Click Element                                      ${Nav_cart}
-    Wait Until Page Contains                           ${item1}
+    Click View Cart
+    Verify If Item Exists In Cart                      ${item1}
     ${Quantity_Old}    Get Element Attribute           ${ShoppingCart_Quantity}    value
     Click Element                                      ${ShoppingCart_AddQty}
     ${Quantity_New}    Get Element Attribute           ${ShoppingCart_Quantity}    value
@@ -50,9 +46,8 @@ Verify If User Can Subtract Quantity in Shopping Cart
     [Tags]    Regression
     # Login To CC Website                                ${login_email}    ${login_pw}    ${login_username}
     # Wait Until Page Contains                           ${login_username}
-    Wait Until Element Is Visible                      ${Nav_cart}
-    Click Element                                      ${Nav_cart}
-    Wait Until Page Contains                           ${item1}
+    Click View Cart
+    Verify If Item Exists In Cart                      ${item1}
     Click Element                                      ${ShoppingCart_AddQty}
     ${Quantity_Old}    Get Element Attribute           ${ShoppingCart_Quantity}    value
     Click Element                                      ${ShoppingCart_SubtractQty}
