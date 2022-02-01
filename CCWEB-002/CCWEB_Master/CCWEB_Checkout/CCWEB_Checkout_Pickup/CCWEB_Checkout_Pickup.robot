@@ -10,7 +10,17 @@ Resource      ../Checkout_Keywords.resource
 # Test Teardown     Close Browser
 
 *** Test Cases ***
+#TO DO
+#DO NOT PLACE ORDER IN PRODUCTION SITE
+#Place Order Using Delivery
+#Use Credit Card
+#Select Pickup Location
+#Verify prices are consistent in Checkout
+#Verify prices if coupon is applied
+#Verify if address is correct
+
 Verify If User Can Proceed To Checkout
+    [Tags]    Smoke
     Open CC Website
     Login To CC Website                                ${login_email}    ${login_pw}    ${login_username}
     Search For Item In Search Bar                      ${item1}
@@ -22,13 +32,16 @@ Verify If User Can Proceed To Checkout
     Click Element                    ${CCWEB_Cart_ProceedCheckout}
     
 Verify If User Can Select Pickup Method
+    [Tags]    Smoke
     Wait Until Element Is Visible    ${CCWEB_Checkout_PickupRadio}
     Click Element                    ${CCWEB_Checkout_PickupRadio}
     
 Verify If User Can Proceed To Payment
+    [Tags]    Smoke
     Click Element                    ${CCWEB_Checkout_ProceedToPayment}
 
 Verify If User Can Proceed To Review
+    [Tags]    Smoke
     Click Element                    ${CCWEB_Checkout_ProceedToReview}
     Close Browser
     

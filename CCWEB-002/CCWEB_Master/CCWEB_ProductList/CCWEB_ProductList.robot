@@ -13,11 +13,19 @@ Test Teardown     Close Browser
 
 #PENDING
 #Filter On Sale Items
-#Sort By
-#List/Grid view
+#Sort By Recommended
+#Sort By Best Selling
+#Sort By Brand asc
+#Sort By Brand desc
+#Sort By Price asc
+#Sort By Price desc
+#Switch to Grid View
+#Switch to List View
 #Filter - Store Locations
 #Filter - Manufacturers
 #Filter - Price Range
+#Switch to Category
+#Switch Subcategory
 
 Verify If User Can Access Product List
     [Tags]    Smoke

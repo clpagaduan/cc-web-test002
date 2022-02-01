@@ -12,6 +12,23 @@ Test Teardown     Close Browser
 
 
 *** Test Cases ***
+#TO DO
+#Navigate other images
+#Select OPEN BOX
+#Add Tech Care Replace
+#Deselect Tech Care Replace
+#Check Other Store
+#Change Preferred Store
+#Write a Review
+#View Related Products
+#Add Related Product to Cart
+#View Customers who purchased this also bought
+#Add ^ to cart
+#Your recently viewed products
+#Add ^ to cart
+#Check if item overview is complete
+#Check if item specifications are complete
+#Check if warranty and returns are complete
 
 Verify If User Can View Product Details
     [Tags]    Smoke

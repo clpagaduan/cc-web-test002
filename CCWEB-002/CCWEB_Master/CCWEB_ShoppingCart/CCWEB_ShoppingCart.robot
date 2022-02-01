@@ -17,6 +17,8 @@ Resource      ShoppingCart_Keywords.resource
 #Verify If User Can Proceed To Checkout
 #Verify If User Can Apply Coupon
 #Verify If User Can Continue Shopping
+#Verify If Subtotal is correct
+#Verify If Item details are reflected correctly
 
 #QA NOTE: Due to captcha being required upon logged in, this entire test case will only have 1 setup and teardown
 

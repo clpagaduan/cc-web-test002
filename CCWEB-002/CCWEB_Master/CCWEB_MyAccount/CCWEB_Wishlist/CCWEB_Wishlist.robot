@@ -12,6 +12,7 @@ Resource      Wishlist_Variables.resource
 #TO DO
 #Delete item in wishlist
 Verify If User Can Add Item To Wishlist
+    [Tags]    Smoke
     Open CC Website
     Login To CC Website                                ${login_email}    ${login_pw}    ${login_username}
     Search and View Product Details    ${Wishlist_ItemCode}
@@ -22,15 +23,19 @@ Verify If User Can Add Item To Wishlist
     # Click Element        ${MyAccount_Wishlist}
     
 Verify If Wishlist Has Image
+    [Tags]    Regression
     Wait Until Element Is Visible   ${Wishlist_Image}    5
     
 Verify If Wishlist Has Item Code
+    [Tags]    Regression
     Wait Until Page Contains   ${Wishlist_ItemCode}    5
     
 Verify If Wishlist Has Item Description
+    [Tags]    Regression
     Wait Until Element Is Visible    ${Wishlist_ItemDesc}    5
     
 Verify If Wishlist Has Price
+    [Tags]    Regression
     Wait Until Page Contains   ${Wishlist_Price}    5
     Close Browser
     

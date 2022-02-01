@@ -16,13 +16,18 @@ Open CC Website
     
 Login To CC Website
     [Arguments]                      ${email}    ${password}    ${username}
+    ${wait1}=    Evaluate    random.randint(5, 11)    random
+    ${wait2}=    Evaluate    random.randint(5, 11)    random
+    ${wait3}=    Evaluate    random.randint(5, 11)    random
+    ${wait4}=    Evaluate    random.randint(5, 11)    random
+    
     Click Element                    ${CCWEB_LoginLink}
-    Sleep    4s
+    Sleep    ${wait1}s
     Input Text                       ${CCWEB_LoginEmail}    ${email}
-    Sleep    10s
+    Sleep    ${wait2}s
     Input Password                   ${CCWEB_LoginPassword}    ${password}
-    Sleep    6s
-    Wait Until Element Is Visible    ${CCWEB_LoginBtn}    8s
+    Sleep    ${wait3}s
+    Wait Until Element Is Visible    ${CCWEB_LoginBtn}    ${wait4}s
     # Wait Until Element Is Visible    ${CCWEB_LoginBtn}   
     # Press Keys    ${CCWEB_LoginPassword}    ENTER
     Click Element                    ${CCWEB_LoginBtn}
@@ -30,12 +35,17 @@ Login To CC Website
     
 Login To CC Website Invalid
     [Arguments]                      ${email}    ${password}    ${username}
+    ${wait1}=    Evaluate    random.randint(5, 11)    random
+    ${wait2}=    Evaluate    random.randint(5, 11)    random
+    ${wait3}=    Evaluate    random.randint(5, 11)    random
+    ${wait4}=    Evaluate    random.randint(5, 11)    random
     Click Element                    ${CCWEB_LoginLink}
+    Sleep    ${wait1}s
     Input Text                       ${CCWEB_LoginEmail}    ${email}
-    Sleep    3s
+    Sleep    ${wait2}s
     Input Password                   ${CCWEB_LoginPassword}    ${password}
-    Sleep    9s
-    Wait Until Element Is Visible    ${CCWEB_LoginBtn}    7s
+    Sleep    ${wait3}s
+    Wait Until Element Is Visible    ${CCWEB_LoginBtn}    ${wait4}s
     # Press Keys    ${CCWEB_LoginPassword}    ENTER
     Click Element                    ${CCWEB_LoginBtn}
     Wait Until Page Contains         ${CCWEB_LoginErrorMessage}
